@@ -180,94 +180,106 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
-  priceType: "close",
+  mode: "live",
+  asOf: "2026-10-28",
+  retrievedAt: "2026-10-28T10:40:00-04:00",
+  priceType: "intraday",
   companies: {
     NVDA: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 221.97 },
+        { date: "2026-10-22", close: 212.21 },
+        { date: "2026-10-23", close: 210.96 },
+        { date: "2026-10-26", close: 216.00 },
+        { date: "2026-10-27", close: 217.94 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "10:38", price: 218.00 },
+      priceSource: "https://stockanalysis.com/stocks/nvda/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
+        { date: "2026-10-27", headline: "Nvidia Stock News (Oct 27, 2026): NVDA Rises 2.4% to $216.00", source: "HeyGoTrade", url: "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-27-2026/", why: "Nvidia rose 2.4% on Oct 26 as AI chip stocks rebounded; Meta's filing says Nvidia indicated non-binding interest in buying up to $5.0 billion of Meta shares in its stock offering." }
       ],
       upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-28", event: "FOMC two-day meeting (Oct 27-28) ends; rate decision due today", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" }
       ]
     },
-    JPM: {
+    DELL: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
+        { date: "2026-10-21", close: 485.88 },
+        { date: "2026-10-22", close: 452.95 },
+        { date: "2026-10-23", close: 456.44 },
+        { date: "2026-10-26", close: 467.09 },
+        { date: "2026-10-27", close: 501.96 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
-      ],
+      latest: { date: "2026-10-28", time: "10:38", price: 494.60 },
+      priceSource: "https://stockanalysis.com/stocks/dell/history/",
+      news: [],
       upcoming: []
     },
-    ACN: {
+    CAT: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
+        { date: "2026-10-21", close: 740.21 },
+        { date: "2026-10-22", close: 704.05 },
+        { date: "2026-10-23", close: 687.00 },
+        { date: "2026-10-26", close: 692.13 },
+        { date: "2026-10-27", close: 713.31 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "10:36", price: 710.83 },
+      priceSource: "https://stockanalysis.com/stocks/cat/history/",
+      news: [
+        { date: "2026-10-25", headline: "Can Caterpillar's $72B Backlog Save Its Stock From a 10% Slump?", source: "24/7 Wall St.", url: "https://247wallst.com/investing/2026/10/25/can-caterpillars-72b-backlog-save-its-stock-from-a-10-slump/", why: "Shares are down about 15% over the past month despite a $72 billion backlog, with about $2.2 billion of full-year tariff costs as the main headwind." }
+      ],
+      upcoming: [
+        { date: "2026-10-29", event: "Q3 2026 results, before the market opens", source: "Caterpillar Inc.", url: "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-to-announce-3q-2026-financial-results-on-oct-29.html" }
+      ]
+    },
+    HLI: {
+      closes: [
+        { date: "2026-10-21", close: 128.39 },
+        { date: "2026-10-22", close: 133.24 },
+        { date: "2026-10-23", close: 131.31 },
+        { date: "2026-10-26", close: 131.21 },
+        { date: "2026-10-27", close: 132.35 }
+      ],
+      latest: { date: "2026-10-28", time: "10:24", price: 134.65 },
+      priceSource: "https://stockanalysis.com/stocks/hli/history/",
       news: [],
       upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-28", event: "Q2 fiscal 2027 results after the NYSE close; call at 5:00 p.m. ET", source: "Houlihan Lokey (via Finviz)", url: "https://finviz.com/news/400062/houlihan-lokey-announces-release-date-for-second-quarter-results-for-fiscal-year-2027" }
       ]
     },
-    DE: {
+    PG: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
+        { date: "2026-10-21", close: 156.84 },
+        { date: "2026-10-22", close: 165.59 },
+        { date: "2026-10-23", close: 161.02 },
+        { date: "2026-10-26", close: 159.92 },
+        { date: "2026-10-27", close: 159.23 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "10:37", price: 159.20 },
+      priceSource: "https://stockanalysis.com/stocks/pg/history/",
       news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-22", headline: "P&G Announces Fiscal Year 2027 First Quarter Results", source: "Procter & Gamble (SEC 8-K exhibit)", url: "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm", why: "Net sales rose 4% to $23.3 billion and core EPS was $2.00; the company raised its net sales growth range to 2% to 4% to include the Thorne acquisition." }
       ],
       upcoming: []
-    },
-    LLY: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
-      ],
-      upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "NVDA 221.97 to 218.00 (-1.8%) on a rebound in AI chip stocks and Nvidia's non-binding interest in Meta's share offering",
+      "DELL 485.88 to 494.60 (+1.8%), no major news found",
+      "CAT 740.21 to 710.83 (-4.0%) on a month-long slide ahead of Q3 earnings, despite a $72B backlog",
+      "HLI 128.39 to 134.65 (+4.9%), no major news found",
+      "PG 156.84 to 159.20 (+1.5%) on Q1 FY2027 results: sales +4%, core EPS $2.00",
+      "Calendar added: FOMC decision (NVDA row), CAT Q3 results Oct 29, HLI Q2 results Oct 28 after close. Nothing found in the window for DELL, PG, or beyond.",
+      "Missing: no dated news items in the last seven days were found and opened for DELL or HLI. Only one item each for NVDA, CAT, and PG.",
+      "Sample records for JPM, ACN, DE, LLY removed; records for DELL, CAT, HLI, PG added. No sample numbers carried over."
+    ],
+    note: "Each series is the closes for Oct 21 to 27 plus an intraday price from Oct 28 around 10:24 to 10:38 ET, so the weekly move includes an unfinished day. All prices come from stockanalysis.com, a secondary source. The FOMC row is attached to NVDA as the market-wide item; the Fed page shows meeting dates Oct 27-28 but I did not open a page stating the decision time. HLI date came from a Finviz copy of the company release, not hl.com directly. The retrievedAt time is approximate."
+  },
   {
     date: "2026-10-16",
     summary: [
